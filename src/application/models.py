@@ -39,12 +39,12 @@ class Product(DateCreatedModelMixin):
         on_delete=models.CASCADE,
         related_name="products",
     )
+
     application = models.ForeignKey(
         Application,
         on_delete=models.CASCADE,
         related_name="products",
     )
-
 
 
 class Contract(DateCreatedModelMixin):
